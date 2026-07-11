@@ -528,6 +528,7 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libxml \
     libmisoundfx \
+    libjamesdsp \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
@@ -1112,6 +1113,7 @@ PRODUCT_PACKAGES += \
     uimgbaservice \
     HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
+    JamesDSPManager \
     PowerOffAlarm \
     QtiTelephony \
     QtiTelephonyService \
