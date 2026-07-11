@@ -529,6 +529,7 @@ PRODUCT_PACKAGES += \
     libxml \
     libmisoundfx \
     libjamesdsp \
+    libv4a_re \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
@@ -1117,6 +1118,7 @@ PRODUCT_PACKAGES += \
     PowerOffAlarm \
     QtiTelephony \
     QtiTelephonyService \
+    ViPER4AndroidFX \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
