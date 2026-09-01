@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MIUI ADD: WIFI_P2pEnhance -->
+<!--  This is the standard feature indicating that the device includes xiaomi feature  -->
+<!--  xiaomi.hardware.p2p_160m: support p2p connection 160m width  -->
+<!--  xiaomi.hardware.p2p_DFS: support p2p DFS feature  -->
+<!--  xiaomi.hardware.p2p_165chan: support p2p connection through 165 channel  -->
+<permissions>
+<feature name="xiaomi.hardware.p2p_160m"/>
+<feature name="xiaomi.hardware.p2p_DFS"/>
+<feature name="xiaomi.hardware.p2p_165chan"/>
+</permissions>
+<!-- END WIFI_P2pEnhance -->

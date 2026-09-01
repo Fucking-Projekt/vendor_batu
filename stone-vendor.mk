@@ -168,6 +168,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
+    vendor/xiaomi/stone/proprietary/vendor/etc/init/mi-misight.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mi-misight.rc \
+    vendor/xiaomi/stone/proprietary/vendor/etc/init/mi_ic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mi_ic.rc \
+    vendor/xiaomi/stone/proprietary/vendor/etc/init/mi_ric.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mi_ric.rc \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/mutualex.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mutualex.rc \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
@@ -175,8 +178,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
+    vendor/xiaomi/stone/proprietary/vendor/etc/init/richtap-vibrator.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/richtap-vibrator.rc \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
+    vendor/xiaomi/stone/proprietary/vendor/etc/init/touchscreen.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/touchscreen.rc \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
@@ -194,11 +199,25 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
+    vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc \
+    vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-service.rc \
+    vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc \
+    vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mimd@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mimd@1.0-service.rc \
+    vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc \
+    vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc \
+    vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc \
+    vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@4.0-service.rc \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
+    vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc \
+    vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.xiaomi.hardware.tidaservice@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.tidaservice@1.2-service.rc \
+    vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc \
+    vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.xiaomi.hardware.vsimapp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.vsimapp@1.0-service.rc \
+    vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc \
     vendor/xiaomi/stone/proprietary/vendor/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf \
     vendor/xiaomi/stone/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/stone/proprietary/vendor/etc/mdss_dsi_panel_m17_38_0c_0a_fhdp_dsc_vid_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mdss_dsi_panel_m17_38_0c_0a_fhdp_dsc_vid_mi.xml \
     vendor/xiaomi/stone/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
+    vendor/xiaomi/stone/proprietary/vendor/etc/permissions/xiaomi.cn.hardware.features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/xiaomi.cn.hardware.features.xml \
     vendor/xiaomi/stone/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/xiaomi/stone/proprietary/vendor/etc/qcril_database/qcrilNr.db:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/qcrilNr.db \
     vendor/xiaomi/stone/proprietary/vendor/etc/qcril_database/upgrade/config/10.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/10.0_config.sql \
@@ -224,6 +243,100 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/stone/proprietary/vendor/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql \
     vendor/xiaomi/stone/proprietary/vendor/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql \
     vendor/xiaomi/stone/proprietary/vendor/etc/qdcm_calib_data_xiaomi_m17_38_0c_0a_fhd_dsc_video_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_xiaomi_m17_38_0c_0a_fhd_dsc_video_dsi_panel.xml \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/NT_OnOff_button.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_OnOff_button.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/NT_camera_photo.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_camera_photo.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/NT_camera_zoom.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_camera_zoom.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/NT_charge.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_charge.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/NT_letters_navi.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_letters_navi.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/NT_unlock_error.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_unlock_error.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/NT_unlock_successful.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_unlock_successful.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/alarm/arp.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/arp.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/alarm/crab.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/crab.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/alarm/fidget.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/fidget.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/alarm/grains.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/grains.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/alarm/pace.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/pace.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/alarm/reflect.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/reflect.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/alarm/repeater.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/repeater.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/alarm/saw.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/saw.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/alarm/shake.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/shake.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/alarm/trad.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/trad.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/common_notification1.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/common_notification1.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/common_notification2.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/common_notification2.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/common_ringtone1.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/common_ringtone1.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/common_ringtone2.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/common_ringtone2.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/default/click.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/default/click.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/default/double_click.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/default/double_click.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/default/heavy_click.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/default/heavy_click.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/default/pop.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/default/pop.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/default/texture_tick.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/default/texture_tick.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/default/thud.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/default/thud.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/default/tick.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/default/tick.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/notification/beak.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/beak.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/notification/bulb_one.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/bulb_one.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/notification/cough.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/cough.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/notification/croak.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/croak.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/notification/cuckoo.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/cuckoo.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/notification/doub.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/doub.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/notification/flap.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/flap.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/notification/gargle.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/gargle.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/notification/guiro.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/guiro.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/notification/hum.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/hum.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/notification/lonba.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/lonba.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/notification/nope.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/nope.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/notification/oi!.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/oi!.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/notification/pep.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/pep.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/notification/rude.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/rude.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/notification/sharp.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/sharp.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/notification/swanny.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/swanny.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/notification/woo.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/woo.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/notification/yeh.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/yeh.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/notification/zip.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/zip.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/ringtone/abra.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/abra.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/ringtone/anna.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/anna.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/ringtone/beetle.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/beetle.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/ringtone/clwb.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/clwb.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/ringtone/coded.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/coded.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/ringtone/crossing.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/crossing.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/ringtone/dolphin.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/dolphin.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/ringtone/hammer.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/hammer.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/ringtone/latency.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/latency.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/ringtone/plot.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/plot.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/ringtone/pneumatic.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/pneumatic.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/ringtone/pulse.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/pulse.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/ringtone/radiate.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/radiate.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/ringtone/ripple.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/ripple.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/ringtone/squirrels.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/squirrels.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/ringtone/sticks.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/sticks.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/ringtone/tennis.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/tennis.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/ringtone/wings.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/wings.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/ringtone/wizard.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/wizard.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/ringtone/woo_yeh.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/woo_yeh.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/strong/NT_OnOff_button.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/NT_OnOff_button.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/strong/NT_camera_photo.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/NT_camera_photo.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/strong/NT_camera_zoom.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/NT_camera_zoom.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/strong/NT_letters_navi.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/NT_letters_navi.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/strong/NT_unlock_error.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/NT_unlock_error.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/strong/NT_unlock_successful.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/NT_unlock_successful.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/strong/click.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/click.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/strong/double_click.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/double_click.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/strong/heavy_click.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/heavy_click.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/strong/pop.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/pop.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/strong/texture_tick.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/texture_tick.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/strong/thud.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/thud.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/strong/tick.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/strong/tick.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/weak/NT_OnOff_button.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/NT_OnOff_button.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/weak/NT_camera_photo.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/NT_camera_photo.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/weak/NT_camera_zoom.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/NT_camera_zoom.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/weak/NT_letters_navi.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/NT_letters_navi.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/weak/NT_unlock_error.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/NT_unlock_error.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/weak/NT_unlock_successful.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/NT_unlock_successful.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/weak/click.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/click.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/weak/double_click.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/double_click.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/weak/heavy_click.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/heavy_click.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/weak/pop.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/pop.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/weak/texture_tick.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/texture_tick.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/weak/thud.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/thud.he \
+    vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/weak/tick.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/tick.he \
     vendor/xiaomi/stone/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/xiaomi/stone/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm.policy \
     vendor/xiaomi/stone/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm.policy \
@@ -287,6 +400,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/stone/proprietary/vendor/etc/sensors/config/strait_tmd2725.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/strait_tmd2725.json \
     vendor/xiaomi/stone/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/xiaomi/stone/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
+    vendor/xiaomi/stone/proprietary/vendor/etc/sku/build_moonstone_p_global.prop:$(TARGET_COPY_OUT_VENDOR)/etc/sku/build_moonstone_p_global.prop \
+    vendor/xiaomi/stone/proprietary/vendor/etc/sku/build_moonstone_p_in.prop:$(TARGET_COPY_OUT_VENDOR)/etc/sku/build_moonstone_p_in.prop \
+    vendor/xiaomi/stone/proprietary/vendor/etc/sku/build_sunstone_cn.prop:$(TARGET_COPY_OUT_VENDOR)/etc/sku/build_sunstone_cn.prop \
+    vendor/xiaomi/stone/proprietary/vendor/etc/sku/build_sunstone_global.prop:$(TARGET_COPY_OUT_VENDOR)/etc/sku/build_sunstone_global.prop \
+    vendor/xiaomi/stone/proprietary/vendor/etc/sku/build_sunstone_in.prop:$(TARGET_COPY_OUT_VENDOR)/etc/sku/build_sunstone_in.prop \
+    vendor/xiaomi/stone/proprietary/vendor/etc/sku/build_sunstone_x.prop:$(TARGET_COPY_OUT_VENDOR)/etc/sku/build_sunstone_x.prop \
     vendor/xiaomi/stone/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
     vendor/xiaomi/stone/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/xiaomi/stone/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
@@ -488,27 +607,39 @@ PRODUCT_PACKAGES += \
     libGLESv2_adreno \
     libq3dtools_adreno \
     libq3dtools_esx \
+    vendor.xiaomi.hardware.micharge@1.0-impl \
+    vendor.xiaomi.hardware.misys@1.0-impl \
+    vendor.xiaomi.hardware.misys@2.0-impl \
+    vendor.xiaomi.hardware.misys@3.0-impl \
+    vendor.xiaomi.hardware.misys@4.0-impl \
     vulkan.adreno \
     libC2D2 \
     libCB \
+    libGPTEE_vendor \
     libOpenCL \
+    libQSEEComAPI \
     libVkLayer_q3dtools \
     libadreno_app_profiles \
     libadreno_utils \
     libc2d30_bltlib \
     libcamxexternalformatutils \
+    libcheckpid \
     libconfigdb \
     libdiag \
     libdsi_netctrl \
     libdsutils \
     libgpudataproducer \
     libgsl \
+    libgui_vendor \
     libidl \
     libkcl \
     libkernelmanager \
     libllvm-glnext \
     libllvm-qcom \
+    liblogwrap_vendor \
     libmdmdetect \
+    libmfido \
+    libmisight \
     libnetmgr \
     libqcci_legacy \
     libqcmaputils \
@@ -526,6 +657,7 @@ PRODUCT_PACKAGES += \
     libqmiservices \
     libqrtr \
     libthermalclient \
+    libtinyxml \
     libxml \
     libmisoundfx \
     libjamesdsp \
@@ -534,6 +666,14 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
     vendor.qti.hardware.vpp@2.0 \
+    vendor.xiaomi.hardware.micharge@1.0 \
+    vendor.xiaomi.hardware.misys@1.0 \
+    vendor.xiaomi.hardware.misys@2.0 \
+    vendor.xiaomi.hardware.misys@3.0 \
+    vendor.xiaomi.hardware.misys@4.0 \
+    vendor.xiaomi.hardware.tidaservice@1.0 \
+    vendor.xiaomi.hardware.tidaservice@1.1 \
+    vendor.xiaomi.hardware.tidaservice@1.2 \
     btaudio_offload_if \
     audio.primary.holi \
     sound_trigger.primary.holi \
@@ -579,8 +719,10 @@ PRODUCT_PACKAGES += \
     libsndmonitor \
     libspkrprot \
     libssrec \
+    libvsim \
     libasphere \
     libshoebox \
+    vendor.xiaomi.hardware.vsimapp@1.0 \
     com.qti.flash.ktd2691 \
     com.qti.sensor.m17_aac_ov02b10_macro \
     com.qti.sensor.m17_aac_s5k3l6_front \
@@ -703,6 +845,7 @@ PRODUCT_PACKAGES += \
     camera.qcom \
     com.dsi.ant@1.0-impl \
     com.qti.chi.override \
+    displayfeature.default \
     fingerprint.fpc.default \
     fingerprint.goodix.default \
     vendor.qti.gnss@4.0-impl \
@@ -716,6 +859,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
+    vendor.xiaomi.hardware.displayfeature@1.0-impl \
+    vendor.xiaomi.hardware.touchfeature@1.0-impl \
+    vendor.xiaomi.sensor.citsensorservice@2.0-impl \
     lib-imscommon \
     lib-imsdpl \
     lib-imsqimf \
@@ -727,11 +873,9 @@ PRODUCT_PACKAGES += \
     lib-rtpcore \
     lib-rtpsl \
     libGPQTEEC_vendor \
-    libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
     libHalSuperSensorServer \
-    libQSEEComAPI \
     libQTEEConnector_listener \
     libQTEEConnector_vendor \
     libSNPE \
@@ -792,6 +936,8 @@ PRODUCT_PACKAGES += \
     libcvpcpuRev_skel \
     libdataitems \
     libdisp-aba \
+    libdisplayfeature \
+    libdisplayfeatureservice \
     libdisplayqos \
     libdisplayskuutils \
     libdpmqmihal \
@@ -804,6 +950,7 @@ PRODUCT_PACKAGES += \
     libgf_ca \
     libgf_hal \
     libgoodixhwfingerprint \
+    libgui_vendor_202604 \
     libhdr_tm \
     libipebpsstriping \
     libipebpsstriping170 \
@@ -811,6 +958,7 @@ PRODUCT_PACKAGES += \
     libizat_core \
     libjnihelper \
     libjpege \
+    libjsoncpp_vendor \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
@@ -847,6 +995,8 @@ PRODUCT_PACKAGES += \
     libmmcamera_pdpc \
     libmorpho_Lowlight \
     libmpbase \
+    libmt \
+    libmt@1.3 \
     libnetmgr_common \
     libnetmgr_nr_fusion \
     libnetmgr_rmnet_ext \
@@ -905,6 +1055,7 @@ PRODUCT_PACKAGES += \
     libsdsprpc \
     libsensorcal \
     libsensorslog \
+    libsize_vendor \
     libsn100u_fw \
     libsnapdragoncolor-manager \
     libsnapdragoncolor-qdcm \
@@ -919,6 +1070,7 @@ PRODUCT_PACKAGES += \
     libsoc_helper_jni \
     libssc \
     libssc_default_listener \
+    libssccalapi@2.0 \
     libssd \
     libswregistrationalgo \
     libsynergy_loc_api \
@@ -926,6 +1078,7 @@ PRODUCT_PACKAGES += \
     libsystem_health_mon \
     libtfestriping \
     libthreadutils \
+    libtida@1.2 \
     libtime_genoff \
     libtinyxml2_1 \
     libtrustedapploader \
@@ -937,6 +1090,7 @@ PRODUCT_PACKAGES += \
     libwms \
     libwqe \
     libwvhidl \
+    libwvkeybox \
     libxtadapter \
     libwvdrmengine \
     qcrilMarshal \
@@ -945,6 +1099,7 @@ PRODUCT_PACKAGES += \
     qtiwakelock \
     sensors.ssc \
     sensors.touch.detect \
+    vendor.aac.hardware.richtap.vibrator-V2-ndk \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
@@ -1035,6 +1190,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0_vendor \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
+    vendor.xiaomi.hardware.mimd@1.0 \
+    vendor.xiaomi.hardware.misight-V1-ndk_platform \
+    vendor.xiaomi.sensor.citsensorservice@1.1 \
+    vendor.xiaomi.sensor.citsensorservice@2.0 \
     vendor_lib_rfsa_adsp_bm2n06_bin \
     vendor_lib_rfsa_adsp_bm2n08_bin \
     vendor_lib_rfsa_adsp_bm2n12_bin \
@@ -1115,10 +1274,10 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     JamesDSPManager \
+    ViPER4AndroidFX \
     PowerOffAlarm \
     QtiTelephony \
     QtiTelephonyService \
-    ViPER4AndroidFX \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
@@ -1132,9 +1291,23 @@ PRODUCT_PACKAGES += \
     qcrilhook \
     c2_manifest_vendor.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
+    manifest_vendor.xiaomi.hardware.mfidoca.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
+    manifest_vendor.xiaomi.hardware.mtdservice.xml \
+    manifest_vendor.xiaomi.hardware.tidaservice.xml \
+    manifest_vendor.xiaomi.hardware.vsimapp.xml \
+    mi-misight.xml \
     vendor.qti.diag.hal.service.xml \
     vendor.qti.gnss@4.0-service.xml \
+    vendor.xiaomi.hardware.micharge@1.0.xml \
+    vendor.xiaomi.hardware.mimd@1.0-service.xml \
+    vendor.xiaomi.hardware.misys@1.0.xml \
+    vendor.xiaomi.hardware.misys@2.0.xml \
+    vendor.xiaomi.hardware.misys@3.0.xml \
+    vendor.xiaomi.hardware.misys@4.0.xml \
+    vendor.xiaomi.sensor.citsensorservice@2.0-service.xml \
+    MI_IC \
+    MI_RIC \
     STFlashTool \
     adpl \
     adsprpcd \
@@ -1143,14 +1316,18 @@ PRODUCT_PACKAGES += \
     cnd \
     cnss-daemon \
     diag-router \
+    displayfeature \
     dpmQmiMgr \
     dspservice \
+    factory_bin \
+    fidoca \
     hvdcp_opti \
     android.hardware.bluetooth@1.0-service-qti \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.gatekeeper@1.0-service-qti \
     android.hardware.keymaster@4.1-service-qti \
     qcrilNrd \
+    vendor-aac-hardware-richtap-vibrator \
     vendor.display.color@1.0-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
@@ -1159,6 +1336,16 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
     vendor.qti.hardware.soter@1.0-service \
     vendor.qti.media.c2@1.0-service \
+    vendor.xiaomi.hardware.displayfeature@1.0-service \
+    vendor.xiaomi.hardware.micharge@1.0-service \
+    vendor.xiaomi.hardware.mimd@1.0-service \
+    vendor.xiaomi.hardware.misight.service \
+    vendor.xiaomi.hardware.misys@1.0-service \
+    vendor.xiaomi.hardware.misys@2.0-service \
+    vendor.xiaomi.hardware.misys@3.0-service \
+    vendor.xiaomi.hardware.misys@4.0-service \
+    vendor.xiaomi.hardware.touchfeature@1.0-service \
+    vendor.xiaomi.sensor.citsensorservice@2.0-service \
     ims_rtp_daemon \
     imsdaemon \
     init.qcom.sensors \
@@ -1171,6 +1358,7 @@ PRODUCT_PACKAGES += \
     mlid \
     mlipayd@1.1 \
     msm_irqbalance \
+    mtd@1.3 \
     mutualex \
     netmgrd \
     pd-mapper \
@@ -1194,6 +1382,8 @@ PRODUCT_PACKAGES += \
     sscrpcd \
     ssgtzd \
     tftp_server \
+    tidad@1.2 \
     time_daemon \
+    vsimd \
     xtra-daemon \
     dpmd
