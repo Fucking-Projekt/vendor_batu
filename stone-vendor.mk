@@ -603,11 +603,18 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     eglSubDriverAndroid \
+    eglSubDriverAndroid_202604 \
     libEGL_adreno \
+    libEGL_adreno_202604 \
     libGLESv1_CM_adreno \
+    libGLESv1_CM_adreno_202604 \
     libGLESv2_adreno \
+    libGLESv2_adreno_202604 \
     libq3dtools_adreno \
+    libq3dtools_adreno_202604 \
     libq3dtools_esx \
+    libq3dtools_esx_202604 \
+    libVkLayer_ADRENO_qprofiler \
     vendor.xiaomi.hardware.micharge@1.0-impl \
     vendor.xiaomi.hardware.misys@1.0-impl \
     vendor.xiaomi.hardware.misys@2.0-impl \
@@ -621,7 +628,9 @@ PRODUCT_PACKAGES += \
     libQSEEComAPI \
     libVkLayer_q3dtools \
     libadreno_app_profiles \
+    libadreno_app_profiles_202604 \
     libadreno_utils \
+    libadreno_utils_202604 \
     libc2d30_bltlib \
     libcamxexternalformatutils \
     libcheckpid \
@@ -630,13 +639,18 @@ PRODUCT_PACKAGES += \
     libdsi_netctrl \
     libdsutils \
     libgpudataproducer \
+    libgpudataproducer_202604 \
+    libdrm_202604 \
     libgsl \
+    libgsl_202604 \
     libgui_vendor \
     libidl \
     libkcl \
     libkernelmanager \
     libllvm-glnext \
+    libllvm-glnext_202604 \
     libllvm-qcom \
+    libllvm-qgl \
     liblogwrap_vendor \
     libmdmdetect \
     libmfido \
