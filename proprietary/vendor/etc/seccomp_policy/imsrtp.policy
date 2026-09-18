@@ -38,7 +38,6 @@ pread64: 1
 fstatfs: 1
 rt_sigaction: 1
 faccessat: 1
-socket: arg0 == AF_UNIX || arg0 == AF_QIPCRTR
 writev: 1
 connect: 1
 rt_sigprocmask: 1
@@ -92,4 +91,3 @@ sched_getaffinity: 1
 socket: 1
 process_vm_readv: 1
 tgkill: 1
-sigreturn: 1

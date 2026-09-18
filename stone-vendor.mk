@@ -211,7 +211,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.xiaomi.hardware.tidaservice@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.tidaservice@1.2-service.rc \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc \
-    vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.xiaomi.hardware.vsimapp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.vsimapp@1.0-service.rc \
+    vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.xiaomi.hardware.vsimapp-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.vsimapp-service.rc \
     vendor/xiaomi/stone/proprietary/vendor/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc \
     vendor/xiaomi/stone/proprietary/vendor/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf \
     vendor/xiaomi/stone/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
@@ -338,8 +338,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/weak/thud.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/thud.he \
     vendor/xiaomi/stone/proprietary/vendor/etc/richtapresources/weak/tick.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/weak/tick.he \
     vendor/xiaomi/stone/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
-    vendor/xiaomi/stone/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm.policy \
-    vendor/xiaomi/stone/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm.policy \
+    vendor/xiaomi/stone/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
+    vendor/xiaomi/stone/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
     vendor/xiaomi/stone/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/xiaomi/stone/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
     vendor/xiaomi/stone/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
@@ -674,40 +674,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.tidaservice@1.0 \
     vendor.xiaomi.hardware.tidaservice@1.1 \
     vendor.xiaomi.hardware.tidaservice@1.2 \
-    btaudio_offload_if \
-    audio.primary.holi \
-    sound_trigger.primary.holi \
-    vendor.qti.hardware.bluetooth_audio@2.0-impl \
-    vendor.qti.hardware.bluetooth_audio@2.1-impl \
-    liba2dpoffload \
-    libacdb-fts \
-    libacdbloader \
-    libacdbrtac \
-    libadiertac \
-    libadm \
-    libaudcal \
-    libaudio_log_utils \
-    libaudioconfigstore \
-    libaudioparsers \
-    libbatterylistener \
-    libbluetooth_audio_session_qti \
-    libbluetooth_audio_session_qti_2_1 \
-    libcapiv2svacnn \
-    libcapiv2svarnn \
-    libcapiv2vop \
-    libcomprcapture \
-    libdrc \
-    libexthwplugin \
-    libgcs-calwrapper \
-    libgcs-ipc \
-    libgcs-osal \
-    libgcs \
-    libhdmiedid \
-    libhdmipassthru \
-    libhfp \
-    liblistensoundmodel2 \
     libmmosal_vendor \
-    libmulawdec \
     libqcodec2_base \
     libqcodec2_basecodec \
     libqcodec2_core \
@@ -715,14 +682,12 @@ PRODUCT_PACKAGES += \
     libqcodec2_platform \
     libqcodec2_utils \
     libqcodec2_v4l2codec \
-    libqtigef \
-    libsndmonitor \
-    libspkrprot \
-    libssrec \
     libvsim \
-    libasphere \
-    libshoebox \
-    vendor.xiaomi.hardware.vsimapp@1.0 \
+    libmisight_202604 \
+    libQSEEComAPI_202604 \
+    libGPTEE_vendor_202604 \
+    libvsim_auth \
+    vendor.xiaomi.hardware.vsimapp-V1-ndk_platform \
     com.qti.flash.ktd2691 \
     com.qti.sensor.m17_aac_ov02b10_macro \
     com.qti.sensor.m17_aac_s5k3l6_front \
@@ -1240,6 +1205,8 @@ PRODUCT_PACKAGES += \
     libfm-hci \
     libimscamera_jni \
     libimsmedia_jni \
+    libmmparser_lite \
+    libmmosal \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.dpmservice@1.0 \

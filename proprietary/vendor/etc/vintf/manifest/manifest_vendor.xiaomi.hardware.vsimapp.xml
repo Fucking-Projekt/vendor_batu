@@ -26,10 +26,8 @@ OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 <manifest version="1.0" type="device"> 
-    <hal format="hidl">
+    <hal format="aidl">
         <name>vendor.xiaomi.hardware.vsimapp</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
         <interface>
             <name>IVSIMService</name>
             <instance>default</instance>
