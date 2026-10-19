@@ -227,7 +227,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/stone/proprietary/vendor/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql \
     vendor/xiaomi/stone/proprietary/vendor/etc/qdcm_calib_data_xiaomi_m17_38_0c_0a_fhd_dsc_video_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_xiaomi_m17_38_0c_0a_fhd_dsc_video_dsi_panel.xml \
     vendor/xiaomi/stone/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
+    vendor/xiaomi/stone/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm.policy \
     vendor/xiaomi/stone/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
+    vendor/xiaomi/stone/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm.policy \
     vendor/xiaomi/stone/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
     vendor/xiaomi/stone/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/xiaomi/stone/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
@@ -484,6 +486,102 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     btaudio_offload_if \
+    eglSubDriverAndroid \
+    libEGL_adreno \
+    libGLESv1_CM_adreno \
+    libGLESv2_adreno \
+    libq3dtools_adreno \
+    libq3dtools_esx \
+    audio.primary.holi \
+    sound_trigger.primary.holi \
+    vendor.qti.hardware.bluetooth_audio@2.0-impl \
+    vendor.qti.hardware.bluetooth_audio@2.1-impl \
+    vulkan.adreno \
+    libC2D2 \
+    libCB \
+    libOpenCL \
+    libVkLayer_q3dtools \
+    liba2dpoffload \
+    libacdb-fts \
+    libacdbloader \
+    libacdbrtac \
+    libadiertac \
+    libadreno_app_profiles \
+    libadreno_utils \
+    libaudcal \
+    libaudio_log_utils \
+    libaudioconfigstore \
+    libaudioparsers \
+    libbatterylistener \
+    libbluetooth_audio_session_qti \
+    libbluetooth_audio_session_qti_2_1 \
+    libc2d30_bltlib \
+    libcamxexternalformatutils \
+    libcapiv2svacnn \
+    libcapiv2svarnn \
+    libcapiv2vop \
+    libcomprcapture \
+    libconfigdb \
+    libdiag \
+    libdsi_netctrl \
+    libdsutils \
+    libexthwplugin \
+    libgcs-calwrapper \
+    libgcs-ipc \
+    libgcs-osal \
+    libgcs \
+    libgpudataproducer \
+    libgsl \
+    libhdmiedid \
+    libhdmipassthru \
+    libhfp \
+    libidl \
+    libkcl \
+    libkernelmanager \
+    liblistensoundmodel2 \
+    libllvm-glnext \
+    libllvm-qcom \
+    libmdmdetect \
+    libmmosal_vendor \
+    libmulawdec \
+    libnetmgr \
+    libqcci_legacy \
+    libqcmaputils \
+    libqcodec2_base \
+    libqcodec2_basecodec \
+    libqcodec2_core \
+    libqcodec2_hooks \
+    libqcodec2_platform \
+    libqcodec2_utils \
+    libqcodec2_v4l2codec \
+    libqdi \
+    libqdp \
+    libqmi \
+    libqmi_cci \
+    libqmi_client_helper \
+    libqmi_client_qmux \
+    libqmi_common_so \
+    libqmi_csi \
+    libqmi_csvt_srvc \
+    libqmi_encdec \
+    libqmi_legacy \
+    libqmiservices \
+    libqrtr \
+    libqtigef \
+    libsndmonitor \
+    libspkrprot \
+    libssrec \
+    libthermalclient \
+    libxml \
+    libasphere \
+    libmisoundfx \
+    libshoebox \
+    vendor.qti.hardware.vpp@1.1 \
+    vendor.qti.hardware.vpp@1.2 \
+    vendor.qti.hardware.vpp@1.3 \
+    vendor.qti.hardware.vpp@2.0 \
+    libadm \
+    libdrc \
     com.qti.flash.ktd2691 \
     com.qti.sensor.m17_aac_ov02b10_macro \
     com.qti.sensor.m17_aac_s5k3l6_front \
@@ -600,33 +698,23 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.2 \
     com.qualcomm.qti.uceservice@2.3 \
     deviceInfoServiceModuleNr \
-    eglSubDriverAndroid \
     eglSubDriverAndroid_202604 \
-    libEGL_adreno \
     libEGL_adreno_202604 \
-    libGLESv1_CM_adreno \
     libGLESv1_CM_adreno_202604 \
-    libGLESv2_adreno \
     libGLESv2_adreno_202604 \
     libVkLayer_ADRENO_qprofiler \
-    libq3dtools_adreno \
     libq3dtools_adreno_202604 \
-    libq3dtools_esx \
     libq3dtools_esx_202604 \
     ftm_fm_lib \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
-    audio.primary.holi \
     camera.qcom \
     com.dsi.ant@1.0-impl \
     com.qti.chi.override \
     fingerprint.fpc.default \
     fingerprint.goodix.default \
-    sound_trigger.primary.holi \
     vendor.qti.gnss@4.0-impl \
     vendor.qti.hardware.alarm@1.0-impl \
-    vendor.qti.hardware.bluetooth_audio@2.0-impl \
-    vendor.qti.hardware.bluetooth_audio@2.1-impl \
     vendor.qti.hardware.bluetooth_sar@1.1-impl \
     vendor.qti.hardware.btconfigstore@1.0-impl \
     vendor.qti.hardware.btconfigstore@2.0-impl \
@@ -636,7 +724,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
-    vulkan.adreno \
     lib-imscommon \
     lib-imsdpl \
     lib-imsqimf \
@@ -647,14 +734,11 @@ PRODUCT_PACKAGES += \
     lib-rtpcommon \
     lib-rtpcore \
     lib-rtpsl \
-    libC2D2 \
-    libCB \
     libGPQTEEC_vendor \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
     libHalSuperSensorServer \
-    libOpenCL \
     libQSEEComAPI \
     libQTEEConnector_listener \
     libQTEEConnector_vendor \
@@ -664,15 +748,7 @@ PRODUCT_PACKAGES += \
     libSnpeHtpV69Stub \
     libSuperSensor \
     libSuperSensorCPU \
-    libVkLayer_q3dtools \
-    liba2dpoffload \
-    libacdb-fts \
-    libacdbloader \
-    libacdbrtac \
-    libadiertac \
-    libadreno_app_profiles \
     libadreno_app_profiles_202604 \
-    libadreno_utils \
     libadreno_utils_202604 \
     libadsp_default_listener \
     libadsprpc \
@@ -693,23 +769,14 @@ PRODUCT_PACKAGES += \
     libarcsoft_supernight \
     libarcsoft_tricam_calibration \
     libarcsoft_tricam_verification \
-    libaudcal \
-    libaudio_log_utils \
-    libaudioconfigstore \
-    libaudioparsers \
-    libbatterylistener \
     libbitmlengine \
     libbitmlenginev2 \
-    libbluetooth_audio_session_qti \
-    libbluetooth_audio_session_qti_2_1 \
     libbtnv \
     libc++_shared \
-    libc2d30_bltlib \
     libcacertclient \
     libcamera_nn_stub \
     libcamera_scene \
     libcamerapostproc \
-    libcamxexternalformatutils \
     libcamxfacialfeatures \
     libcamxfdalgo \
     libcamxfdengine \
@@ -720,9 +787,6 @@ PRODUCT_PACKAGES += \
     libcamxswispiqmodule \
     libcamxswprocessalgo \
     libcamxtintlessalgo \
-    libcapiv2svacnn \
-    libcapiv2svarnn \
-    libcapiv2vop \
     libcdfw \
     libcdfw_remote_api \
     libcdsp_default_listener \
@@ -733,13 +797,10 @@ PRODUCT_PACKAGES += \
     libcneoplookup \
     libcneqmiutils \
     libcom.qti.chinodeutils \
-    libcomprcapture \
-    libconfigdb \
     libcpion \
     libcvp_common \
     libcvpcpuRev_skel \
     libdataitems \
-    libdiag \
     libdisp-aba \
     libdisplayqos \
     libdisplayskuutils \
@@ -748,44 +809,26 @@ PRODUCT_PACKAGES += \
     libdrm_202604 \
     libdrmfs \
     libdrmtime \
-    libdsi_netctrl \
-    libdsutils \
     libembmsservice \
-    libexthwplugin \
     libfastcvdsp_stub \
     libfastcvopt \
-    libgcs-calwrapper \
-    libgcs-ipc \
-    libgcs-osal \
-    libgcs \
     libgf_ca \
     libgf_hal \
     libgoodixhwfingerprint \
-    libgpudataproducer \
     libgpudataproducer_202604 \
-    libgsl \
     libgsl_202604 \
-    libhdmiedid \
-    libhdmipassthru \
     libhdr_tm \
-    libhfp \
-    libidl \
     libipebpsstriping \
     libipebpsstriping170 \
     libizat_client_api \
     libizat_core \
     libjnihelper \
     libjpege \
-    libkcl \
-    libkernelmanager \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
     liblbs_core \
-    liblistensoundmodel2 \
-    libllvm-glnext \
     libllvm-glnext_202604 \
-    libllvm-qcom \
     libllvm-qgl \
     libloc_api_v02 \
     libloc_api_wds \
@@ -796,7 +839,6 @@ PRODUCT_PACKAGES += \
     liblowi_wifihal \
     liblqe \
     libmctfengine_stub \
-    libmdmdetect \
     libmdsprpc \
     libmfec \
     libmialgo_ai_vision \
@@ -818,11 +860,8 @@ PRODUCT_PACKAGES += \
     libmmcamera_mfnr \
     libmmcamera_mfnr_t4 \
     libmmcamera_pdpc \
-    libmmosal_vendor \
     libmorpho_Lowlight \
     libmpbase \
-    libmulawdec \
-    libnetmgr \
     libnetmgr_common \
     libnetmgr_nr_fusion \
     libnetmgr_rmnet_ext \
@@ -840,16 +879,7 @@ PRODUCT_PACKAGES += \
     libpowercore \
     libqcbor \
     libqcc_file_agent \
-    libqcci_legacy \
-    libqcmaputils \
-    libqcodec2_base \
-    libqcodec2_basecodec \
-    libqcodec2_core \
-    libqcodec2_hooks \
     libqcodec2_mockfilter \
-    libqcodec2_platform \
-    libqcodec2_utils \
-    libqcodec2_v4l2codec \
     libqcrilNr \
     libqcrilNrFramework \
     libqcrilNrLogger \
@@ -857,28 +887,14 @@ PRODUCT_PACKAGES += \
     libqcrilNrQtiMutex \
     libqcrildatactl \
     libqdcm-mode-parser \
-    libqdi \
-    libqdp \
     libqisl \
     libqll10 \
     libqllengine \
-    libqmi \
-    libqmi_cci \
-    libqmi_client_helper \
-    libqmi_client_qmux \
-    libqmi_common_so \
-    libqmi_csi \
-    libqmi_csvt_srvc \
-    libqmi_encdec \
-    libqmi_legacy \
     libqmiextservices \
-    libqmiservices \
-    libqrtr \
     libqrtrclient \
     libqsap_sdk \
     libqseed3 \
     libqsocket \
-    libqtigef \
     libqtikeymaster4 \
     librcc \
     librcmask \
@@ -907,7 +923,6 @@ PRODUCT_PACKAGES += \
     libsensorslog \
     libsnapdragoncolor-manager \
     libsnapdragoncolor-qdcm \
-    libsndmonitor \
     libsnpe_dsp_domains_v2 \
     libsns_device_mode_stub \
     libsns_fastRPC_util \
@@ -917,17 +932,14 @@ PRODUCT_PACKAGES += \
     libsnsdiaglog \
     libsoc_helper \
     libsoc_helper_jni \
-    libspkrprot \
     libssc \
     libssc_default_listener \
     libssd \
-    libssrec \
     libswregistrationalgo \
     libsynergy_loc_api \
     libsynx \
     libsystem_health_mon \
     libtfestriping \
-    libthermalclient \
     libthreadutils \
     libtime_genoff \
     libtinyxml2_1 \
@@ -940,7 +952,6 @@ PRODUCT_PACKAGES += \
     libwms \
     libwqe \
     libwvhidl \
-    libxml \
     libxtadapter \
     libwvdrmengine \
     qcrilMarshal \
@@ -949,9 +960,6 @@ PRODUCT_PACKAGES += \
     qtiwakelock \
     sensors.ssc \
     sensors.touch.detect \
-    libasphere \
-    libmisoundfx \
-    libshoebox \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
@@ -1030,10 +1038,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.sensorscalibrate@1.0 \
     vendor.qti.hardware.slmadapter@1.0 \
     vendor.qti.hardware.soter@1.0 \
-    vendor.qti.hardware.vpp@1.1 \
-    vendor.qti.hardware.vpp@1.2 \
-    vendor.qti.hardware.vpp@1.3 \
-    vendor.qti.hardware.vpp@2.0 \
     vendor.qti.ims.callcapability@1.0_vendor \
     vendor.qti.ims.callinfo@1.0 \
     vendor.qti.ims.factory@1.0 \
